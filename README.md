@@ -70,4 +70,61 @@ The objective of this framework is to validate critical workflows in a medical r
 
 Login → Search medicine → Add to cart → Validate stock → Apply GST → Payment → Generate invoice → Verify stock deduction
 
+How to Run
+
+Install dependencies
+npm install
+
+Run all tests
+npx playwright test
+
+Run API tests
+npx playwright test tests/api
+
+Run UI tests
+npx playwright test tests/ui
+
+Run E2E suite
+npx playwright test tests/e2e
+
+Open HTML report
+npx playwright show-report
+
+CI Pipeline
+This project includes GitHub Actions for:
+
+pull request validation
+smoke regression
+nightly E2E execution
+report artifact upload
+
+Business Value
+This framework simulates testing for a real medical shop ERP ecosystem, focusing on:
+
+accuracy of medicine stock
+billing correctness
+compliance through GST validation
+stable release confidence
+prevention of production leakage
+
+Why This Project Matters
+
+This portfolio project reflects real enterprise QA capabilities:
+
+test strategy thinking
+business workflow validation
+microservice-friendly API testing
+regression automation
+CI/CD integration
+scalable framework design
+
+Future Enhancements
+
+database validation layer
+contract testing with schemas
+visual regression for invoices
+performance smoke checks
+Dockerized test execution
+test data factories
+
 └── README.md
